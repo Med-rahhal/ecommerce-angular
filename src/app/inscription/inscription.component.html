@@ -1,0 +1,143 @@
+  
+    <div class="container py-4 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card shadow-2-strong" style="border-radius: 1rem; box-shadow: 0 0 20px rgba(0,0,0,0.2);  ;">
+              
+              <div class="card-body p-4 text-center">
+
+    
+                <h3 class="mb-3">créer votre compte</h3>
+    
+                <form>
+                <div class="form-outline mb-3" >
+                  <div class="form-group"  style="text-align: left;">
+                      <span class="input-icon"><i class="fa fa-user"></i></span>
+                      <input class="form-control form-control-lg" type="text" placeholder="nom" required>
+                  </div>
+                </div>
+
+                <div class="form-outline mb-3" >
+                    <div class="form-group"  style="text-align: left;">
+                        <span class="input-icon"><i class="fa fa-user"></i></span>
+                        <input class="form-control form-control-lg" type="text" placeholder="prenom" required>
+                    </div>
+                  </div>
+
+                  <div class="form-outline mb-3" >
+                    <div class="form-group"  style="text-align: left;">
+                        <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                        <input class="form-control form-control-lg" type="email" placeholder="Email" required>
+                    </div>
+                  </div>
+
+                  <div class="form-outline mb-3">
+                    <div class="form-group"  style="text-align: left;">
+                        <span class="input-icon"><i class="fa fa-lock"></i></span>
+                    <input type="password" class="form-control form-control-lg"  placeholder="Password" required>
+                </div>
+                  </div>
+
+                  <div class="form-outline mb-3" >
+                    <div class="form-group"  style="text-align: left;">
+                        <span class="input-icon"><i class="fa fa-phone"></i></span>
+                        <input class="form-control form-control-lg" type="text" placeholder="tel" required>
+                    </div>
+                  </div>
+                 
+                  <div class="form-outline mb-3" >
+                    <div class="form-group"  style="text-align: left;">
+                        <span class="input-icon"><i class="fa fa-house-user"></i></span>
+                        <input class="form-control form-control-lg" type="text" placeholder="adresse : Rue imem..cité" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+
+                    <select class="select">
+                      <option value="1">ville</option>
+                      <option value="2">ben arous</option>
+                      <option value="3">ariana</option>
+                      <option value="4">tunis</option>
+                    </select>
+
+                  </div>
+    
+             
+    
+    
+                <button class="btn btn-primary btn-lg btn-block" type="submit" style="background-color: #6162b8">s'inscrire</button>
+                <hr class="my-3">
+               
+          </form>
+          <p class="text-center text-muted">avez vous un compte ? <a routerLink="/login"
+            class="fw-bold text-body"><u>Login</u></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      <div class="container" style="text-align: left;">
+  
+        <div class="row">
+           
+            <div class="col-6">
+        
+                <h1>inscription</h1>
+        <form #f="ngForm" (ngSubmit)="envoyer(f)">
+                <f est une variable de reference referencie a la directive ngform-->
+        
+            <!--ngform pourr controler les differents input-->
+                <!--ngmodel pour suivre l'etat de chaque input
+                le valeur est la validateur-->
+            <!--
+            <div class="form-group"> 
+                <label>nom</label>
+                <input class="form-control" type="text" name="nom" required ngModel #n="ngModel" >required est un validateur
+            </div>
+        
+            <div class="alert alert-danger" *ngIf="n.invalid && n.touched">
+                le nom est un champs obligatoire
+            </div>
+        
+            <div class="form-group">
+                <label>prenom</label>
+                <input class="form-control" type="text" name="prenom" required ngModel #pr="ngModel">
+             </div>
+        
+             <div class="alert alert-danger" *ngIf="pr.invalid && pr.touched">
+                le prenom est un champs obligatoire
+            </div>
+        
+            <div class="form-group">
+                 <label>email</label>
+                <input class="form-control" type="email" name="email" placeholder="name@example.com" required ngModel #e="ngModel" pattern="^[A-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$"> 
+            </div>
+        
+            <div class="alert alert-danger" *ngIf="e.invalid && e.touched">
+                <div *ngIf="e.errors?.['required']">l'email est un champs obligatoire</div>
+                <div *ngIf="e.errors?.['pattern']">email invalid</div>
+                
+        
+        
+            </div>
+        
+            <div class="form-group"> 
+                <label>password</label>
+                <input class="form-control" type="password" name="password" required minlength="8"  ngModel #p="ngModel">
+            </div>
+        
+            <div class="alert alert-danger" *ngIf="p.invalid && p.touched">
+                la password est un champs obligatoire  "min 8 caractéres"
+            </div>
+        
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox">
+              <label class="form-check-label">j'accepte</label>
+            </div>
+            <button class="btn btn-success" [disabled]="f.invalid" type="submit">envoyer</button>
+        </form>
+        </div>
+      -->
+    
+      

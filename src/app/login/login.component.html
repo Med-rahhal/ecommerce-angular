@@ -1,0 +1,112 @@
+  
+    <div class="container py-4 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card shadow-2-strong" style="border-radius: 1rem; box-shadow: 0 0 20px rgba(0,0,0,0.2);  ;">
+                
+                <div class="card-body p-5 text-center">
+
+      
+                  <h3 class="mb-3">Sign in</h3>
+                  <img [src]="image" class="rounded-circle" style="width: auto; height: 100px; margin-left: 5px;margin-bottom: 30px;">
+                  <form>
+                  <div class="form-outline mb-4" >
+                    <div class="form-group"  style="text-align: left;">
+                        <span class="input-icon"><i class="fa fa-envelope"></i></span>
+                        <input class="form-control form-control-lg" type="email" placeholder="Email" required>
+                    </div>
+                  </div>
+      
+                  <div class="form-outline mb-4">
+                    <div class="form-group d-flex flex-row"  style="text-align: left;">
+                        <span class="input-icon"><i class="fa fa-lock"></i></span>
+                        
+                    <input #passwordInput class="form-control form-control-lg" type="password" placeholder="Password" required >
+                    <span (click)="togglePasswordVisibility(passwordInput)" class="fa fa-fw fa-eye field-icon toggle-password " id="visibilité"></span>
+                    
+                </div>
+                  </div>
+      
+                  <div class="form-check d-flex justify-content-start mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                    <label class="form-check-label" for="form1Example3"> Remember password </label>
+                  </div>
+      
+                  <button class="btn btn-primary btn-lg btn-block" type="submit" style="background-color: #6162b8">Login</button>
+                  <br>
+                  <span class="forgot-pass"><a href="">mot de passe oublié ?</a></span>
+                  <hr class="my-4">
+                 
+                  
+            </form>
+            <button class="btn btn-lg btn-block btn-primary" style="background-color: #dd4b39;"
+            (click)="versInscription()" type="submit">Créer nouveau compte</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+        <div class="container" style="text-align: left;">
+    
+          <div class="row">
+             
+              <div class="col-6">
+          
+                  <h1>inscription</h1>
+          <form #f="ngForm" (ngSubmit)="envoyer(f)">
+                  <f est une variable de reference referencie a la directive ngform-->
+          
+              <!--ngform pourr controler les differents input-->
+                  <!--ngmodel pour suivre l'etat de chaque input
+                  le valeur est la validateur-->
+              <!--
+              <div class="form-group"> 
+                  <label>nom</label>
+                  <input class="form-control" type="text" name="nom" required ngModel #n="ngModel" >required est un validateur
+              </div>
+          
+              <div class="alert alert-danger" *ngIf="n.invalid && n.touched">
+                  le nom est un champs obligatoire
+              </div>
+          
+              <div class="form-group">
+                  <label>prenom</label>
+                  <input class="form-control" type="text" name="prenom" required ngModel #pr="ngModel">
+               </div>
+          
+               <div class="alert alert-danger" *ngIf="pr.invalid && pr.touched">
+                  le prenom est un champs obligatoire
+              </div>
+          
+              <div class="form-group">
+                   <label>email</label>
+                  <input class="form-control" type="email" name="email" placeholder="name@example.com" required ngModel #e="ngModel" pattern="^[A-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$"> 
+              </div>
+          
+              <div class="alert alert-danger" *ngIf="e.invalid && e.touched">
+                  <div *ngIf="e.errors?.['required']">l'email est un champs obligatoire</div>
+                  <div *ngIf="e.errors?.['pattern']">email invalid</div>
+                  
+          
+          
+              </div>
+          
+              <div class="form-group"> 
+                  <label>password</label>
+                  <input class="form-control" type="password" name="password" required minlength="8"  ngModel #p="ngModel">
+              </div>
+          
+              <div class="alert alert-danger" *ngIf="p.invalid && p.touched">
+                  la password est un champs obligatoire  "min 8 caractéres"
+              </div>
+          
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label">j'accepte</label>
+              </div>
+              <button class="btn btn-success" [disabled]="f.invalid" type="submit">envoyer</button>
+          </form>
+          </div>
+        -->
